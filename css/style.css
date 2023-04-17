@@ -51,10 +51,14 @@ header {
 }
 
 
+
 .navbar {
     display: flex;
 }
 
+.navegacion{
+    margin: 0;
+}
 .navbar a {
     color: var(--text-color);
     font-size: 1rem;
@@ -4171,7 +4175,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -4423,7 +4427,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -4675,7 +4679,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -4926,7 +4930,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -5177,7 +5181,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -5428,7 +5432,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -5690,7 +5694,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -5917,7 +5921,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -6175,7 +6179,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -6438,7 +6442,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -6708,7 +6712,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -6971,7 +6975,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -7236,7 +7240,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -7500,7 +7504,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -7765,7 +7769,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -8031,7 +8035,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -8298,7 +8302,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -8564,7 +8568,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
@@ -8828,7 +8832,7 @@ footer img {
 
     }
 
-    #check:checked~ul {
+    #check:checked~nav ul {
         left: 0;
     }
 
