@@ -9,7 +9,7 @@
 }
 
 :root {
-    --bg-color: #000;
+    --bg-color: #202020;
     --text-color: #fff;
     --main-color: #EF2FB1;
     --dropdown: #171717;
@@ -49,8 +49,6 @@ header {
     display: flex;
     align-items: center;
 }
-
-
 
 .navbar {
     display: flex;
@@ -190,6 +188,18 @@ header {
     margin: 0;
 }
 
+.movies-main-2 {
+    background: var(--bg-1);
+    margin: 0;
+    padding-top: 70px;
+}
+
+.movies-main-3 {
+    background: var(--bg-1);
+    margin: 0;
+    padding-top: 90px;
+}
+
 .slider-posters {
     width: 90%;
     margin: 0 auto;
@@ -300,7 +310,7 @@ header {
 
 .title-main {
     padding-top: 30px;
-    margin: 0 18px;
+    margin: 0 5%;
     position: relative;
     letter-spacing: .64px;
     color: var(--text-color);
@@ -342,10 +352,10 @@ header {
 
 .title-movies {
     padding-top: 30px;
-    margin: 0 18px;
+    margin: 0 5.4%;
     position: relative;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -419,6 +429,16 @@ header {
     background-position: center center;
 }
 
+.peliculas-p1 {
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, .7)), url("../img/movies-bg/bg-12.jpg");
+    padding: 30px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .series-all {
     width: 90%;
     margin: 0 auto;
@@ -460,18 +480,38 @@ header {
     position: relative;
     color: var(--text-color);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
-.series-p1 p {
-    padding-top: 5px;
+.series-all .series-item-p1 p {
+    padding-top: 10px;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .movie-top {
     margin: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, .7)), url("../img/movies-bg/bg-9.jpg");
+    padding: 30px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.serie-top {
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, .7)), url("../img/movies-bg/bg-10.jpg");
+    padding: 30px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.pelicula-top {
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, .7)), url("../img/movies-bg/bg-13.jpg");
     padding: 30px 0;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -503,7 +543,7 @@ header {
 .movie-all-p1 p {
     padding-top: 5px;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 1rem;
     text-align: justify;
     width: 650px;
 }
@@ -526,7 +566,7 @@ header {
 }
 
 .title-top {
-    padding-top: 130px;
+    padding-top: 100px;
     margin: 0px;
     position: relative;
     color: var(--text-color);
@@ -662,6 +702,52 @@ footer img {
     margin-bottom: 0;
     text-decoration: none;
 }
+
+
+
+.contacto{
+    padding-top: 110px;
+    background: #202020;
+    margin: 0;
+}
+.peliculas-p1 p{
+    padding-top: 30px;
+    margin-left: 110px;
+}
+
+form {
+    margin-left: 100px;
+    width: 30%;
+    background-color: #1b1b1b;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 /* ------------------------------ MEDIA QUERYS ------------------------------ */
 
@@ -1031,6 +1117,7 @@ footer img {
         padding-top: 60px;
     }
 
+  
 }
 
 @media screen and (min-width:1701px) and (max-width:1750px) {
@@ -1152,6 +1239,52 @@ footer img {
     .title-top {
         padding-top: 60px;
     }
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -1272,6 +1405,53 @@ footer img {
         padding-top: 60px;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:1601px) and (max-width:1650px) {
@@ -1390,6 +1570,52 @@ footer img {
     .title-top {
         padding-top: 60px;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 
 }
@@ -1511,6 +1737,53 @@ footer img {
         padding-top: 60px;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:1511px) and (max-width:1560px) {
@@ -1630,6 +1903,53 @@ footer img {
         padding-top: 60px;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:1481px) and (max-width:1510px) {
@@ -1745,6 +2065,53 @@ footer img {
         padding-top: 60px;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:1440px) and (max-width:1480px) {
@@ -1859,6 +2226,53 @@ footer img {
     .title-top {
         padding-top: 60px;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -2016,6 +2430,51 @@ footer img {
         padding: 0 6%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 40%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
 
@@ -2172,6 +2631,53 @@ footer img {
     .container-fluid {
         padding: 0 6%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 
 }
@@ -2330,6 +2836,98 @@ footer img {
         padding: 0 6%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -2487,6 +3085,53 @@ footer img {
     .container-fluid {
         padding: 0 6%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 
 }
@@ -2684,6 +3329,53 @@ footer img {
     .container-fluid {
         padding: 0 6%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -2883,6 +3575,53 @@ footer img {
         padding: 0 6%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:1151px) and (max-width:1200px) {
@@ -3081,6 +3820,52 @@ footer img {
         padding: 0 6%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 45%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:1090px) and (max-width:1150px) {
@@ -3171,10 +3956,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 1rem;
+        padding-top: 10px;
+        font-size: 1.1rem;
+        font-weight: 200;
         width: 780px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -3284,6 +4070,53 @@ footer img {
         padding: 0 6%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 50%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:1024px) and (max-width:1089px) {
@@ -3374,10 +4207,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: 1rem;
+        font-weight: 200;
         width: 750px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -3487,6 +4321,54 @@ footer img {
         padding: 0 7%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 50%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
+
 }
 
 @media screen and (min-width:962px) and (max-width:1023px) {
@@ -3578,10 +4460,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: 1rem;
+        font-weight: 200;
         width: 720px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -3691,6 +4574,53 @@ footer img {
         padding: 0 7%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 50%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
 }
 
 @media screen and (min-width:913px) and (max-width:961px) {
@@ -3770,7 +4700,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -3782,10 +4712,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 200;
         width: 690px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -3799,8 +4730,8 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 80px;
-        font-size: 1.3rem;
+        padding-top: 45%;
+        font-size: 1.4rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
@@ -3808,14 +4739,14 @@ footer img {
 
     .movies-p1 .movies-item-p1 a {
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 30%;
         padding: 5px;
-        font-size: 10px;
-        width: 80px;
+        font-size: 12px;
+        width: 100px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: .8rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -3894,6 +4825,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -3974,7 +4952,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -3986,10 +4964,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 200;
         width: 690px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -4003,8 +4982,8 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 80px;
-        font-size: 1.3rem;
+        padding-top: 45%;
+        font-size: 1.4rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
@@ -4012,14 +4991,14 @@ footer img {
 
     .movies-p1 .movies-item-p1 a {
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 30%;
         padding: 5px;
-        font-size: 10px;
-        width: 80px;
+        font-size: 12px;
+        width: 100px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: .8rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -4098,6 +5077,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -4226,7 +5252,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -4236,12 +5262,12 @@ footer img {
         font-size: 12px;
     }
 
-
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 200;
         width: 670px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -4255,8 +5281,8 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 80px;
-        font-size: 1.3rem;
+        padding-top: 45%;
+        font-size: 1.4rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
@@ -4264,14 +5290,14 @@ footer img {
 
     .movies-p1 .movies-item-p1 a {
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 30%;
         padding: 5px;
-        font-size: 10px;
-        width: 80px;
+        font-size: 12px;
+        width: 100px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: .8rem;
+        font-size: .9rem;
         text-align: center;
     }
 
@@ -4350,6 +5376,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -4478,7 +5551,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 
@@ -4490,10 +5563,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 200;
         width: 650px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -4602,6 +5676,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -4730,7 +5851,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -4742,10 +5863,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 200;
         width: 640px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -4854,6 +5976,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:731px) and (max-width:767px) {
@@ -4981,7 +6150,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -4993,10 +6162,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
-        width: 600px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
+        width: 620px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -5105,6 +6275,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:701px) and (max-width:730px) {
@@ -5232,7 +6449,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 
@@ -5244,10 +6461,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
         width: 600px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -5356,6 +6574,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 70%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:651px) and (max-width:700px) {
@@ -5453,7 +6718,7 @@ footer img {
 
     .title-movies {
         margin-left: 7%;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 200;
     }
 
@@ -5483,22 +6748,23 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 
     .series-all .series-item-p1 a {
         margin-top: 25px;
-        margin-left: 36%;
+        margin-left: 35%;
         font-size: 12px;
     }
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
         width: 550px;
         text-align: center;
-
     }
 
     .movies-p1 {
@@ -5512,23 +6778,23 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 55px;
-        font-size: 1rem;
+        padding-top: 25%;
+        font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
     }
 
     .movies-p1 .movies-item-p1 a {
-        margin-top: 10px;
-        margin-left: 50px;
+        margin-top: 15%;
+        margin-left: 25%;
         padding: 5px;
-        font-size: 10px;
+        font-size: .7rem;
         width: 80px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: 11px;
+        font-size: .8rem;
         text-align: center;
     }
 
@@ -5617,6 +6883,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 70%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:601px) and (max-width:650px) {
@@ -5698,6 +7011,18 @@ footer img {
         left: 0;
     }
 
+    .title-main {
+        margin-left: 5%;
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+
+    .title-movies {
+        margin-left: 7%;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+
     .slider-posters {
         width: 90%;
         gap: 1rem;
@@ -5735,19 +7060,21 @@ footer img {
     .title-series {
         padding-top: 0px;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .series-item-p1 p {
-        width: 100%;
-        font-size: 1rem;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
+        width: 500px;
         text-align: center;
     }
 
     .series-all .series-item-p1 a {
         font-size: .8rem;
         font-weight: 300;
-        margin-left: 35%;
+        margin-left: 33%;
     }
 
     .movies-p1 {
@@ -5760,22 +7087,26 @@ footer img {
     }
 
     .title-p1 {
-        padding-top: 10px;
+        margin-top: 1px;
+        padding-top: 25%;
+        font-size: 1.1rem;
+        font-weight: 400;
         margin: 0;
         text-align: center;
     }
 
     .movies-p1 .movies-item-p1 a {
-        margin-left: 5%;
+        margin-top: 15%;
+        margin-left: 25%;
+        padding: 5px;
+        font-size: .7rem;
+        width: 80px;
     }
 
     .movies-p1 .movies-item-p1 p {
         font-size: .8rem;
-        width: 100%;
         text-align: center;
     }
-
-
 
     .movie-all-top {
         width: 100%;
@@ -5808,13 +7139,18 @@ footer img {
 
     .title-top {
         text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .movie-all-p1 i {
+        display: none;
     }
 
     .movie-all-top .movie-all-p1 a {
-
         align-content: center;
-        margin-left: 36%;
-
+        margin-left: 33%;
+        font-size: .8rem;
+        width: 170px;
     }
 
     .footer-logo {
@@ -5843,6 +7179,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 8%;
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -5925,6 +7308,18 @@ footer img {
         left: 0;
     }
 
+    .title-main {
+        margin-left: 5%;
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+
+    .title-movies {
+        margin-left: 7%;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+
     .slider-posters {
         width: 90%;
         gap: .9rem;
@@ -5966,20 +7361,23 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
     .series-all .series-item-p1 a {
         margin-top: 25px;
-        margin-left: 27%;
+        margin-left: 30%;
         font-size: 12px;
     }
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
         width: 460px;
+        text-align: center;
     }
 
     .movies-p1 {
@@ -6002,7 +7400,7 @@ footer img {
 
     .movies-p1 .movies-item-p1 a {
         margin-top: 10px;
-        margin-left: 20px;
+        margin-left: 25%;
         padding: 5px;
         font-size: 10px;
         width: 80px;
@@ -6098,6 +7496,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 8%;
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -6229,20 +7674,23 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .series-all .series-item-p1 a {
         margin-top: 25px;
-        margin-left: 27%;
+        margin-left: 30%;
         font-size: 12px;
     }
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
         width: 420px;
+        text-align: center;
     }
 
     .movies-p1 {
@@ -6256,7 +7704,7 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 35px;
+        padding-top: 15%;
         font-size: 13px;
         font-weight: 400;
         margin: 0;
@@ -6361,6 +7809,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 8%;
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:461px) and (max-width:500px) {
@@ -6491,7 +7986,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -6503,8 +7998,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
         width: 380px;
+        text-align: center;
     }
 
     .movies-p1 {
@@ -6518,23 +8016,23 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 35px;
-        font-size: 13px;
+        padding-top: 25%;
+        font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
     }
 
     .movies-p1 .movies-item-p1 a {
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 15%;
+        margin-left: 25%;
         padding: 5px;
-        font-size: 10px;
+        font-size: .7rem;
         width: 80px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: 11px;
+        font-size: .8rem;
         text-align: center;
     }
 
@@ -6629,6 +8127,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 8%;
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 
 }
 
@@ -6760,7 +8305,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -6772,8 +8317,11 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
         width: 350px;
+        text-align: center;
     }
 
     .movies-p1 {
@@ -6787,23 +8335,23 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 35px;
-        font-size: 13px;
+        padding-top: 25%;
+        font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
     }
 
     .movies-p1 .movies-item-p1 a {
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 15%;
+        margin-left: 25%;
         padding: 5px;
-        font-size: 10px;
+        font-size: .7rem;
         width: 80px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: 11px;
+        font-size: .8rem;
         text-align: center;
     }
 
@@ -6857,7 +8405,7 @@ footer img {
 
     .movie-all-top .movie-all-p1 a {
         align-content: center;
-        margin-left: 10%;
+        margin-left: 25%;
         font-size: .8rem;
         width: 170px;
     }
@@ -6892,6 +8440,53 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 8%;
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
 }
 
 @media screen and (min-width:414px) and (max-width:424px) {
@@ -7022,7 +8617,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -7034,9 +8629,12 @@ footer img {
 
 
     .series-all .series-item-p1 p {
-        font-size: 13px;
+        font-size: .9rem;
+        padding-top: 10px;
         width: 350px;
-    }
+        text-align: center;
+        font-weight: 200;
+        }
 
     .movies-p1 {
         grid-template-columns: repeat(2, 1fr);
@@ -7049,23 +8647,26 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 35px;
-        font-size: 13px;
+        padding-top: 25%;
+        font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
         text-align: center;
     }
 
     .movies-p1 .movies-item-p1 a {
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 15%;
+        margin-left: 25%;
         padding: 5px;
-        font-size: 10px;
+        font-size: .7rem;
         width: 80px;
     }
 
     .movies-p1 .movies-item-p1 p {
-        font-size: 11px;
+        padding-top: 10px;
+        font-size: .9rem;
+        font-weight: 200;
+        width: 330px;
         text-align: center;
     }
 
@@ -7119,7 +8720,7 @@ footer img {
 
     .movie-all-top .movie-all-p1 a {
         align-content: center;
-        margin-left: 10%;
+        margin-left: 25%;
         font-size: .8rem;
         width: 170px;
     }
@@ -7154,6 +8755,52 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 8%;
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
 
@@ -7299,7 +8946,9 @@ footer img {
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: .9rem;
+        font-weight: 200;
         width: 330px;
         text-align: center;
     }
@@ -7421,6 +9070,52 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 88%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 }
 
 @media screen and (min-width:390px) and (max-width:392px) {
@@ -7559,13 +9254,15 @@ footer img {
 
     .series-all .series-item-p1 a {
         margin-top: 25px;
-        margin-left: 25%;
+        margin-left: 24%;
         font-size: 12px;
     }
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: .9rem;
+        font-weight: 200;
         width: 330px;
         text-align: center;
     }
@@ -7582,7 +9279,7 @@ footer img {
 
     .title-p1 {
         margin-top: 1px;
-        padding-top: 25%;
+        padding-top: 10%;
         font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
@@ -7689,6 +9386,52 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 88%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
 
@@ -7828,13 +9571,15 @@ footer img {
 
     .series-all .series-item-p1 a {
         margin-top: 25px;
-        margin-left: 25%;
+        margin-left: 23%;
         font-size: 12px;
     }
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: .9rem;
+        font-weight: 200;
         width: 310px;
         text-align: center;
     }
@@ -7959,6 +9704,51 @@ footer img {
         padding: 0 7%;
     }
 
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 88%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
 
@@ -8091,7 +9881,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 500;
         text-align: center;
     }
@@ -8104,7 +9894,9 @@ footer img {
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: .9rem;
+        font-weight: 200;
         width: 300px;
         text-align: center;
     }
@@ -8227,6 +10019,52 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 88%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
 
@@ -8360,7 +10198,7 @@ footer img {
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -8372,7 +10210,9 @@ footer img {
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: .9rem;
+        font-weight: 200;
         width: 250px;
         text-align: center;
     }
@@ -8458,7 +10298,7 @@ footer img {
 
     .movie-all-top .movie-all-p1 a {
         align-content: center;
-        margin-left: 10%;
+        margin-left: 20%;
         font-size: .8rem;
         width: 170px;
     }
@@ -8493,6 +10333,52 @@ footer img {
     .container-fluid {
         padding: 0 7%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 88%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 
 }
@@ -8620,26 +10506,27 @@ footer img {
     }
 
     .series-item-p1 {
-        width: 190px;
+        width: 220px;
     }
 
     .title-series {
         padding: 0;
         margin: 0;
-        font-size: 1.1rem;
-        text-align: center;
+        font-size: 1rem;
+        text-align: center;       
     }
 
     .series-all .series-item-p1 a {
         margin-top: 25px;
-        margin-left: 4%;
+        margin-left: 10%;
         font-size: .7rem;
     }
 
 
     .series-all .series-item-p1 p {
+        padding-top: 10px;
         font-size: .9rem;
-        width: 190px;
+        font-weight: 200;
         text-align: center;
     }
 
@@ -8761,6 +10648,52 @@ footer img {
     .container-fluid {
         padding: 0 2%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 90%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
 
@@ -9028,5 +10961,51 @@ footer img {
     .container-fluid {
         padding: 0 2%;
     }
+
+    .movies-main-3{
+        padding-top: 85px;
+        background: #202020;
+        margin: 0;
+        font-size: .8rem;
+       
+    }
+    .peliculas-p1 p{
+        padding-top: 30px;
+        margin-left: 6%;
+        font-size: .8rem;
+    }
+    
+    form {
+        margin-left: 5%;
+        width: 90%;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
 }
