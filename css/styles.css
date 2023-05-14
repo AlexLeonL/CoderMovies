@@ -63,7 +63,11 @@ header {
   transition: all 0.5s ease;
 }
 .navbar a:hover {
-  color: var(--links);
+  color: var(--text-color);
+  transition: all 0.7s ease;
+  background-color: rgba(82, 80, 80, 0.78);
+  border-radius: 10px;
+  padding: 10%;
 }
 
 .main {
@@ -307,6 +311,13 @@ header {
   overflow: auto;
 }
 
+.movies4 {
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+
 .movies-item {
   position: relative;
   width: 265px;
@@ -407,6 +418,15 @@ header {
   margin: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.7)), url("../img/movies-bg/bg-12.jpg");
   padding: 30px 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.peliculas-p4 {
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.7)), url("../img/movies-bg/bg-8.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,6 +552,22 @@ header {
   box-shadow: 5px 5px 10px black;
   cursor: pointer;
 }
+
+.movie4-container {
+  width: 70%;
+}
+
+.movie4-all-p1{
+  margin-top: 4.2%;
+}
+
+.movie4-all-p1 video {
+  box-shadow: 5px 5px 10px black;
+  width:100%; 
+  height:70vh;
+  cursor: pointer;
+  
+}
 .movie-all-p1 p {
   padding-top: 5px;
   font-weight: 200;
@@ -625,7 +661,7 @@ footer img {
   width: 28%;
   margin-left: 85px;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 1rem;
   padding: 0 0 20px 1.2rem;
   text-align: justify;
 }
@@ -723,6 +759,119 @@ form input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.container-pelicula {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  grid-gap: 32px;
+  backdrop-filter: blur(12px) contrast(80%);
+  color: white;
+}
+
+.info {
+  padding-top: 24px;
+  padding-left: 75px;
+}
+
+.poster {
+  margin: 23%;
+  width: 400px;
+  height: 58vh;
+}
+
+.poster img {
+  width: 400px;
+  height: 58vh;
+  object-fit: cover;
+  transition: all 1.5s ease-in-out;
+}
+
+.poster img:hover {
+  transform: scale(1.10) rotateZ(5deg);
+}
+
+.info > div {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+.movie-title {
+  font-size: 64px;
+  padding-top: 2%;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #ffa8e3,#EF2FB1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.movie-detail .set {
+  display: inline-block;
+  margin-right: 64px
+}
+
+.movie-detail label {
+  font-size: 14px;
+  color: #ededed;
+  display: block;
+}
+
+.movie-detail span {
+  font-size: 22px;
+}
+
+.movie-description {
+  line-height: 24px;
+  font-weight: 300;
+  width: 82%;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+
+.movie-cast .header {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.movie-cast .list {
+  display: grid;
+  grid-template-columns: repeat(8,130px);
+  grid-gap: 32px;
+}
+
+.movie-cast .cast {
+  width: 120px;
+  height: 160px;
+  cursor: pointer;
+}
+
+.movie-cast img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-cast .cast:hover img {
+  border-width: 0px;
+  transform: scale(1.1) rotateZ(-2deg);
+  box-shadow: -4px 4px 16px #d6d6d6,
+      4px -4px 16px #EF2FB1;
+}
+
+.movie-cast label {
+  margin-top: 8px;
+  display: block;
+}
+
+.movie-cast .cast:hover label {
+  margin-top: 24px;
+  color: #EF2FB1;
+  font-weight: medium;
 }
 
 @media screen and (min-width: 1851px) and (max-width: 1900px) {
