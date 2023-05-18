@@ -368,6 +368,20 @@ header {
   font-size: 15px;
 }
 
+.movies-item-p1 a {
+  width: 140px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 10px 25px;
+  border: 1px solid #797676;
+  border-radius: 5px;
+  color: var(--text-color);
+  text-align: center;
+  transition: 0.5s;
+  background-color: rgba(121, 118, 118, 0.1725490196);
+}
+
 
 .title-p1 {
   padding-top: 100px;
@@ -376,6 +390,20 @@ header {
   color: var(--text-color);
   font-weight: 500;
   font-size: 20px;
+}
+
+.movies-p1 .movies-item-p1 a {
+  width: 140px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 10px 25px;
+  border: 1px solid #797676;
+  border-radius: 5px;
+  color: var(--text-color);
+  text-align: center;
+  transition: 0.5s;
+  background-color: rgba(121, 118, 118, 0.1725490196);
 }
 
 
@@ -407,6 +435,20 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.movies-p1 .movies-item-p1 a {
+  width: 140px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 10px 25px;
+  border: 1px solid #797676;
+  border-radius: 5px;
+  color: var(--text-color);
+  text-align: center;
+  transition: 0.5s;
+  background-color: rgba(121, 118, 118, 0.1725490196);
 }
 
 .series-all {
